@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="홈페이지 개편 작업 진행 중입니다.">
+    <title>홈페이지 준비중</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #2c3e50;
+        }
+
+        .header {
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 50px 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .message-box h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+
+        .message-box p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #5a6c7d;
+            line-height: 1.8;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 30px 20px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        /* 모바일 대응 */
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            .logo {
+                max-width: 220px;
+            }
+
+            .message-box {
+                padding: 40px 30px;
+            }
+
+            .message-box h1 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            .message-box p {
+                font-size: 15px;
+            }
+
+            .footer {
+                padding: 20px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 20px;
+            }
+
+            .logo {
+                max-width: 180px;
+            }
+
+            .message-box {
+                padding: 30px 25px;
+            }
+
+            .message-box h1 {
+                font-size: 18px;
+            }
+
+            .message-box p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="/680px_logo_white.png" alt="회사 로고" class="logo">
+    </header>
+
+    <main class="main-content">
+        <div class="message-box">
+            <h1>현재 홈페이지 개편 작업이 진행 중입니다.</h1>
+            <p>빠른 시일 내에 정상 서비스로 찾아뵙겠습니다.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 All rights reserved.</p>
+    </footer>
+</body>
+</html>
