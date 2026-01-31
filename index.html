@@ -38,17 +38,16 @@
 
         .header {
             width: 100%;
-            padding: 40px 20px 0;
+            padding: 50px 20px;
             text-align: center;
             position: relative;
             z-index: 1;
         }
 
         .logo {
-            max-width: 280px;
+            max-width: 300px;
             width: 100%;
             height: auto;
-            margin-bottom: 28px;
             opacity: 0;
             animation: fadeInDown 0.8s ease-out forwards;
         }
@@ -204,8 +203,12 @@
 
         /* 모바일 대응 */
         @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+
             .logo {
-                max-width: 220px;
+                max-width: 240px;
             }
 
             .message-box {
@@ -234,8 +237,12 @@
         }
 
         @media (max-width: 480px) {
+            .header {
+                padding: 30px 20px;
+            }
+
             .logo {
-                max-width: 180px;
+                max-width: 200px;
             }
 
             .message-box {
@@ -258,9 +265,12 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <img src="/680px_logo_white.png" alt="회사 로고" class="logo">
+    </header>
+
     <main class="main-content">
         <div class="message-box">
-            <img src="/680px_logo_white.png" alt="회사 로고" class="logo">
             <div class="status-badge">Under Construction</div>
             <h1>현재 홈페이지 개편 작업이 진행 중입니다.</h1>
             <p>빠른 시일 내에 정상 서비스로 찾아뵙겠습니다.</p>
